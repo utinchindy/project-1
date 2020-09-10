@@ -5,6 +5,8 @@
  */
 class Hewan
 {
+	public $momo, $doggo, $zya, $masha;
+
 	public function bersuara(){
 		return "Hewan Ini Bersuara : ";
 	} 
@@ -66,3 +68,23 @@ class Elang extends Hewan
 		return "Hewan ini bisa terbang";
 	}
 }
+
+/**
+ * 
+ */
+class Angsa extends Hewan
+{
+	
+	public function bersuara()
+	{
+		echo "kwaaakk";
+	}
+
+	public function jumlah_kaki(){
+		return "Hewan ini memiliki jumlah kaki : ";
+	}
+	public function bisa_terbang(){
+		return "Hewan ini bisa terbang";
+	}
+}
+
