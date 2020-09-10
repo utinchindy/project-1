@@ -5,7 +5,7 @@
  */
 class Hewan
 {
-	public $momo, $doggo, $zya, $masha;
+	public $momo, $doggo, $zya, $masha, $bisa_terbang;
 
 	public function bersuara(){
 		return "Hewan Ini Bersuara : ";
@@ -17,17 +17,15 @@ class Hewan
  */
 class Kucing extends Hewan
 {
-	
+	public $bisa_terbang = "Hewan ini tidak bisa terbang";
+
 	public function bersuara()
 	{
-		echo "Meoww";
+		echo "Meoww <br> <hr>";
 	}
 
 	public function jumlah_kaki(){
 		return "Hewan ini memiliki jumlah kaki : ";
-	}
-	public function bisa_terbang(){
-		return "Hewan ini tidak bisa terbang";
 	}
 }
 
@@ -37,16 +35,15 @@ class Kucing extends Hewan
 class Anjing extends Hewan
 {
 	
+	public $bisa_terbang = "Hewan ini tidak bisa terbang";
+
 	public function bersuara()
 	{
-		echo "Guk Guk";
+		echo "Guk Guk <br> <hr>";
 	}
 
 	public function jumlah_kaki(){
 		return "Hewan ini memiliki jumlah kaki : ";
-	}
-	public function bisa_terbang(){
-		return "Hewan ini tidak bisa terbang";
 	}
 }
 
@@ -55,17 +52,15 @@ class Anjing extends Hewan
  */
 class Elang extends Hewan
 {
+	public $bisa_terbang = "Hewan ini bisa terbang";
 	
 	public function bersuara()
 	{
-		echo "Miippp";
+		echo "Miippp <br> <hr>";
 	}
 
 	public function jumlah_kaki(){
 		return "Hewan ini memiliki jumlah kaki : ";
-	}
-	public function bisa_terbang(){
-		return "Hewan ini bisa terbang";
 	}
 }
 
@@ -74,17 +69,21 @@ class Elang extends Hewan
  */
 class Angsa extends Hewan
 {
+	public $bisa_terbang = "Hewan ini bisa terbang";
 	
 	public function bersuara()
 	{
-		echo "kwaaakk";
+		echo "kwaaakk <br> <hr>";
 	}
 
 	public function jumlah_kaki(){
 		return "Hewan ini memiliki jumlah kaki : ";
 	}
-	public function bisa_terbang(){
-		return "Hewan ini bisa terbang";
-	}
 }
 
+$momo = new Kucing;
+$momo->jumlah_kaki = 4;
+echo "Momo adalah seekor Kucing <br>";
+echo "Punya Kaki Sebanyak : ".$momo->jumlah_kaki."<br>";
+echo $momo->bisa_terbang."<br>";
+echo $momo->bersuara(). "<br>";
