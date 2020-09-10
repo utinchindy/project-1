@@ -47,3 +47,22 @@ class Anjing extends Hewan
 		return "Hewan ini tidak bisa terbang";
 	}
 }
+
+/**
+ * 
+ */
+class Elang extends Hewan
+{
+	
+	public function bersuara()
+	{
+		echo "Miippp";
+	}
+
+	public function jumlah_kaki(){
+		return "Hewan ini memiliki jumlah kaki : ";
+	}
+	public function bisa_terbang(){
+		return "Hewan ini bisa terbang";
+	}
+}
